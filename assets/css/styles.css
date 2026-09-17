@@ -5,8 +5,30 @@
   box-sizing: border-box;
 }
 :root{
-    --color1: green;
+    --bg_header:rgba(255, 255, 255, 1);
+    --stroke:rgba(214, 172, 172, 1);
+    --font_principal: "Arial", sans-serif;
+    --white: rgb(250, 247, 247);
+}
+.site-header{
+    background-color: var(--bg_header);
+    border-bottom: 2px solid var(--stroke);
+    padding: 32px;
+
+
 }
 body{
-    background-color: var(--color1);
+    font-family: var(--font_principal);
+}
+.site-header h1{}
+.site-header .main-navigation{}
+.site-header .main-navigation .main-menu{}
+.site-header .main-navigation .main-menu .menu-item{}
+.site-header .main-navigation .main-menu .menu-item a{
+    background-color: var(--white);
+    padding: 15px 40px;
+    display: inline-block;
+}
+.site-header .main-navigation .main-menu .menu-item a:hover{
+    background-color: var(--stroke);
 }
